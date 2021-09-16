@@ -1,7 +1,7 @@
-<?
-$servername = "172.28.0.2";
-$username = "root";
-$password = "superSecr3t";
+<?php
+$servername = "localhost";
+$username = "vp";
+$password = "Dli2work.";
 $method = $_SERVER['REQUEST_METHOD'];
 echo "$method::Welcome to iot-server\n";
 
@@ -10,10 +10,10 @@ echo "DATABASE_URL=mysql://$username:$password@$servername:PORT_NUMBER/\r\n";
 $conn = mysqli_connect($servername, $username, $password);
 
 //error logging
-ini_set("log_errors", 1);
-ini_set("error_log", "/var/www/html/php-error.log");
-error_reporting(E_ALL);
-ini_set('display_errors', 1);
+// ini_set("log_errors", 1);
+// ini_set("error_log", "/var/www/html/php-error.log");
+// error_reporting(E_ALL);
+// ini_set('display_errors', 1);
 
 
 // Check connection
